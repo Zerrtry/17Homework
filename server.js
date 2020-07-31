@@ -115,13 +115,13 @@ app.post("/api/workouts", (req,res) => {
 // connectDB()
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutdb", { useNewUrlParser: true, useUnifiedTopology: true });
 
-db.Workout.create({ type: "cardio"} )
-  .then(dbUser => {
-    console.log(dbUser);
-  })
-  .catch(({ message }) => {
-    console.log(message);
-  });
+// db.Workout.create({ type: "cardio"} )
+//   .then(dbUser => {
+//     console.log(dbUser);
+//   })
+//   .catch(({ message }) => {
+//     console.log(message);
+//   });
 
 
 
